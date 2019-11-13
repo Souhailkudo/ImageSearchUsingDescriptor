@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body >
+
+    <center>
+    <h1>Search</h1>
+    <div>
+            <form  action="" method="post" >
+                <div class="form-group" >
+                   <span >{{ showThumbnailForm.imageId(class = "btn btn-default" , size=32) }}</span>
+                   <span >{{ showThumbnailForm.show(class ="btn btn-primary") }}</span>
+
+                    <span>
+                        {% if imagesrc %}
+                            <img src = {{ imagesrc }} >
+                        {% else %}
+
+                        {% endif %}
+                    </span>
+
+                </div>
+            </form>
+
+                <h2 style=" visibility: {{ visibility }} "> search finished in {{ seconds }} seconds and {{ micros }} microseconds </h2>
+
+             <div>
+                {% for src in imgSources %}
+
+                    <span>
+                        <img src = {{ src }} >
+                    </span>
+
+                {% endfor %}
+            </div>
+    </div>
+    </center>
+
+
+</body>
+</html>
