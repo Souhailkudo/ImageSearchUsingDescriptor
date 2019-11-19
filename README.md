@@ -9,4 +9,5 @@ The database is huge, so the challenge is to make the search the fastest possibl
   
 Honestly at first I thought the first clustering should be enough, then I got surprised with a search that took 4 to 5 seconds. So I added the second clustering, which made the search take less then one second.
 
-You can find the thumbnails and the dataset in the link below
+You can find the thumbnails and the dataset in the link below:
+https://drive.google.com/drive/folders/19cU70RDVKU7OuwpHslTjrsJJY_1kc-hS?usp=sharing
